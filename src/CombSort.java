@@ -53,32 +53,4 @@ public class CombSort {
             }
         }
     }
-
-    // Основной метод
-    public static void main(String args[])
-    {
-
-        int n = 8000;
-        int arr[] = new int[n];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) (Math.random() * 1000);
-        }
-        //Замер времени
-        long start = System.currentTimeMillis();
-        //Сортируем его:
-        CombSort combsort = new CombSort();
-        //combsort.sort(arr);
-
-        long finish = System.currentTimeMillis();
-        long elapsed = finish - start;
-        System.out.println(" ");
-        System.out.println("Прошло времени, мс: " + elapsed);
-
-        //Выводим:
-//        System.out.println("sorted array");
-//        for (int i=0; i<arr.length; ++i)
-//            System.out.print(arr[i] + " ");
-
-
-    }
 }
